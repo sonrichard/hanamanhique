@@ -35,7 +35,7 @@ const setMusic = (i) => {
         seekBar.max = music.duration;
         let duracao = formatTime(music.duration)
         musicDuration.innerHTML = duracao;
-    }, 300);
+    }, 500);
 }
 
 setMusic(0);
