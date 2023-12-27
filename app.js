@@ -26,7 +26,6 @@ const setMusic = (i) => {
     let song = songs[i];
     currentMusic = i;
     music.src = song.path;
-
     songName.innerHTML = song.name;
     artistName.innerHTML = song.artist;
     disk.style.backgroundImage = (`url('${song.cover}')`);
@@ -40,7 +39,6 @@ setMusic(0);
 
 setInterval(() => {
     seekBar.value = music.currentTime;
-    currentTime.innerHTML = music.currentTime;
     if (Math.floor(music.currentTime) == Math.floor(seekBar.max)) {
         forwardBtn.click();
     }
