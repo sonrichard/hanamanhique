@@ -32,6 +32,7 @@ const setMusic = (i) => {
     disk.style.backgroundImage = (`url('${song.cover}')`);
     setTimeout(() => {
         seekBar.max = music.duration;
+        musicDuration.innerHTML = music.duration;
     }, 500);
 }
 
