@@ -33,7 +33,8 @@ const setMusic = (i) => {
     currentTime.innerHTML = '00:00';
     setTimeout(() => {
         seekBar.max = music.duration;
-        musicDuration.innerHTML = formatTime(music.duration);
+        let duracao = formatTime(music.duration)
+        musicDuration.innerHTML = duracao;
     }, 300);
 }
 
