@@ -34,7 +34,7 @@ const setMusic = (i) => {
     setTimeout(() => {
         seekBar.max = music.duration;
         musicDuration.innerHTML = formatTime(music.duration);
-    }, 300)
+    }, 300);
 }
 
 setMusic(0);
@@ -48,7 +48,7 @@ const formatTime = (time) => {
     if (sec < 10) {
         sec = `0${sec}`;
     }
-    return `${min} : ${sec}`;
+    return `${min}:${sec}`;
 }
 
 setInterval(() => {
