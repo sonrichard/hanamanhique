@@ -34,22 +34,11 @@ const setMusic = (i) => {
     setTimeout(() => {
         seekBar.max = music.duration;
         musicDuration.innerHTML = music.duration;
-    }, 300);
+    }, 500);
 }
 
 setMusic(0);
 
-const formatTime = (time) => {
-    let min = Math.floor(time / 60);
-    if (min < 10) {
-        min = `0${min}`;
-    }
-    let sec = Math.floor(time % 60);
-    if (sec < 10) {
-        sec = `0${sec}`;
-    }
-    return `${min}:${sec}`;
-}
 
 setInterval(() => {
     seekBar.value = music.currentTime;
@@ -57,7 +46,7 @@ setInterval(() => {
     if (Math.floor(music.currentTime) == Math.floor(seekBar.max)) {
         forwardBtn.click();
     }
-}, 300)
+}, 500)
 
 const playMusic = () => {
     music.play();
