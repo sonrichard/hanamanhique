@@ -40,6 +40,7 @@ setMusic(0);
 
 setInterval(() => {
     seekBar.value = music.currentTime;
+    currentTime.innerHTML = music.currentTime;
     if (Math.floor(music.currentTime) == Math.floor(seekBar.max)) {
         forwardBtn.click();
     }
