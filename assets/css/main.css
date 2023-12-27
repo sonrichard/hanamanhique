@@ -2338,6 +2338,7 @@ body.is-preload #wrapper {
 .artist-name {
 	text-align: center;
 	text-transform: capitalize;
+	text-overflow: ellipsis;
 
 }
 
