@@ -46,7 +46,7 @@ setInterval(() => {
     if (Math.floor(music.currentTime) == Math.floor(seekBar.max)) {
         forwardBtn.click();
     }
-}, 500)
+}, 300)
 
 const playMusic = () => {
     music.play();
