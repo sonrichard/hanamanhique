@@ -34,7 +34,7 @@ const setMusic = (i) => {
     setTimeout(() => {
         seekBar.max = music.duration;
         musicDuration.innerHTML = music.duration;
-    }, 500);
+    }, 300);
 }
 
 setMusic(0);
