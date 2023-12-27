@@ -30,10 +30,8 @@ const setMusic = (i) => {
     songName.innerHTML = song.name;
     artistName.innerHTML = song.artist;
     disk.style.backgroundImage = (`url('${song.cover}')`);
-    currentTime.innerHTML = '00:00';
     setTimeout(() => {
         seekBar.max = music.duration;
-        musicDuration.innerHTML = music.duration;
     }, 500);
 }
 
@@ -42,11 +40,10 @@ setMusic(0);
 
 setInterval(() => {
     seekBar.value = music.currentTime;
-    currentTime.innerHTML = music.currentTime;
     if (Math.floor(music.currentTime) == Math.floor(seekBar.max)) {
         forwardBtn.click();
     }
-}, 300)
+}, 500)
 
 const playMusic = () => {
     music.play();
