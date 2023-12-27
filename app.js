@@ -33,9 +33,8 @@ const setMusic = (i) => {
     currentTime.innerHTML = '00:00';
     setTimeout(() => {
         seekBar.max = music.duration;
-        let duracao = formatTime(music.duration)
-        musicDuration.innerHTML = duracao;
-    }, 700);
+        musicDuration.innerHTML = music.duration;
+    }, 300);
 }
 
 setMusic(0);
@@ -54,7 +53,7 @@ const formatTime = (time) => {
 
 setInterval(() => {
     seekBar.value = music.currentTime;
-    currentTime.innerHTML = formatTime(music.currentTime);
+    currentTime.innerHTML = music.currentTime;
     if (Math.floor(music.currentTime) == Math.floor(seekBar.max)) {
         forwardBtn.click();
     }
