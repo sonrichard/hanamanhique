@@ -40,5 +40,12 @@ let songs = [
         artist: 'Richard Moises(Criador)',
         cover: 'images/f6.jpg'
 
+    },
+    {
+        name: 'Ninda',
+        path: 'song/7.wav',
+        artist: 'Laurinda Moises',
+        cover: 'images/f7.jpg'
+
     }
 ]
